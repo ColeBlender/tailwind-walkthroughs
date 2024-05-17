@@ -4,6 +4,7 @@ import {
   XIcon,
   YouTubeIcon,
 } from "@/components/ui/cole-social-icons";
+import Image from "next/image";
 import Link from "next/link";
 
 function HomePage() {
@@ -18,7 +19,14 @@ function HomePage() {
           <div className="flex justify-center items-center gap-2">
             <p className="text-center text-lg">By: Cole Blender</p>
 
-            <img src="/prof-pic.png" className="rounded-full size-7" />
+            <Image
+              src="https://github.com/ColeBlender.png"
+              className="rounded-full size-7"
+              alt="Cole Blender's GitHub profile picture"
+              height={28}
+              width={28}
+              priority
+            />
           </div>
 
           <div className="flex gap-6 w-full justify-center mt-2">
