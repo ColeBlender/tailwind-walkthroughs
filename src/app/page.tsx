@@ -60,7 +60,7 @@ export default HomePage;
 
 const projects = [
   {
-    name: "Article Page",
+    name: "Article",
     youtubeLink:
       "https://www.youtube.com/watch?v=il5hpERJUjo&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=1",
   },
