@@ -22,13 +22,19 @@ function HomePage() {
           </div>
 
           <div className="flex gap-6 w-full justify-center mt-2">
-            <Link href="https://www.youtube.com/@coleblender" target="_blank">
+            <Link
+              href="https://www.youtube.com/playlist?list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6"
+              target="_blank"
+            >
               <YouTubeIcon className="size-6" />
             </Link>
             <Link href="https://twitter.com/coleblender" target="_blank">
               <XIcon className="size-6" />
             </Link>
-            <Link href="https://github.com/coleblender" target="_blank">
+            <Link
+              href="https://github.com/ColeBlender/tailwind-walkthroughs"
+              target="_blank"
+            >
               <GitHubIcon className="size-6" />
             </Link>
           </div>
@@ -55,6 +61,7 @@ export default HomePage;
 const projects = [
   {
     name: "Article",
-    youtubeLink: "https://www.youtube.com/@coleblender",
+    youtubeLink:
+      "https://www.youtube.com/watch?v=il5hpERJUjo&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=1",
   },
 ];
