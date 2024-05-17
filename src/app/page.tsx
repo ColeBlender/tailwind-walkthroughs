@@ -54,7 +54,7 @@ export default HomePage;
 
 const projects = [
   {
-    name: "Dashboard",
+    name: "Article",
     youtubeLink: "https://www.youtube.com/@coleblender",
   },
 ];
