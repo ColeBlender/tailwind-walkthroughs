@@ -4,4 +4,4 @@ The ultimate way to master Tailwind CSS is by building real, functional UIs. Sur
 
 Let's do it 👇
 
-https://www.youtube.com/@coleblender
+https://www.youtube.com/playlist?list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6
