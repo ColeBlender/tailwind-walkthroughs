@@ -42,7 +42,7 @@ function HomePage() {
 
         <hr className="border-muted-foreground w-full my-10" />
 
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 items-center">
           {projects.map((project) => (
             <ProjectLink
               key={project.name}
@@ -61,6 +61,11 @@ export default HomePage;
 const projects = [
   {
     name: "Article",
+    youtubeLink:
+      "https://www.youtube.com/watch?v=il5hpERJUjo&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=1",
+  },
+  {
+    name: "Login",
     youtubeLink:
       "https://www.youtube.com/watch?v=il5hpERJUjo&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=1",
   },
