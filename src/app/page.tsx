@@ -67,6 +67,6 @@ const projects = [
   {
     name: "Login",
     youtubeLink:
-      "https://www.youtube.com/watch?v=il5hpERJUjo&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=1",
+      "https://www.youtube.com/watch?v=dt144O8BkT4&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=2",
   },
 ];
