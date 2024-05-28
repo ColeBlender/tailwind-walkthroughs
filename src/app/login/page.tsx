@@ -13,7 +13,7 @@ function LoginPage() {
   };
 
   return (
-    <main className="flex flex-col min-h-screen justify-center items-center px-4">
+    <main className="flex flex-col min-h-screen justify-center items-center px-4 text-white">
       <img
         src="/login-img.webp"
         className="absolute -z-10 size-full object-cover"

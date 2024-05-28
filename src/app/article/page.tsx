@@ -8,9 +8,7 @@ const font = Noto_Serif({
 
 function ArticlePage() {
   return (
-    <main
-      className={`bg-white text-black min-h-screen flex gap-4 p-4 ${font.className}`}
-    >
+    <main className={`min-h-screen flex gap-4 p-4 ${font.className}`}>
       <div className="max-w-4xl mx-auto flex gap-4">
         <div className="flex-1 relative">
           <button className="absolute rounded-full py-2 px-4 flex gap-1 border border-zinc-500 hover:bg-zinc-200 transition-colors duration-200 ease-in-out">

@@ -8,7 +8,7 @@ import Link from "next/link";
 
 function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col items-center px-4">
+    <main className="min-h-screen flex flex-col items-center px-4 bg-black text-white">
       <div className="mt-16 w-full max-w-4xl flex flex-col items-center">
         <h1 className="text-4xl font-bold text-center">
           Tailwind Walkthroughs
