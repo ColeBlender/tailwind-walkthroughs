@@ -69,4 +69,9 @@ const projects = [
     youtubeLink:
       "https://www.youtube.com/watch?v=dt144O8BkT4&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=2",
   },
+  {
+    name: "Travel",
+    youtubeLink:
+      "https://www.youtube.com/watch?v=dt144O8BkT4&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=2",
+  },
 ];

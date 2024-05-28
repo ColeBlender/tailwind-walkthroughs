@@ -41,7 +41,7 @@ function TravelPage() {
       </header>
 
       <main className="flex flex-col items-center flex-1 w-full">
-        <div className="flex w-full flex-1 max-w-7xl">
+        <div className="flex w-full flex-1">
           <div className="flex-1 px-4 py-12 flex flex-col">
             <h1 className="text-6xl font-semibold">
               Explore the <p>horizon with us</p>
