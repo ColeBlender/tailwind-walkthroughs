@@ -51,7 +51,7 @@ function TravelPage() {
               <p className="text-lg font-semibold">What are you looking for?</p>
               <div className="flex flex-wrap gap-2">
                 {tags.map((tag, index) => (
-                  <Tag tag={tag} index={index} />
+                  <Tag key={tag} tag={tag} index={index} />
                 ))}
               </div>
 
