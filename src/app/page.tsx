@@ -77,6 +77,6 @@ const projects = [
   {
     name: "Landing Page",
     youtubeLink:
-      "https://www.youtube.com/watch?v=EWtaRfOiUZs&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=3",
+      "https://www.youtube.com/watch?v=Bj2qvWDeYdw&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=4",
   },
 ];
