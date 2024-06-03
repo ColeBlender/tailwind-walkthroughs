@@ -84,4 +84,9 @@ const projects = [
     youtubeLink:
       "https://www.youtube.com/watch?v=30Ruc1Pjj6s&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=5",
   },
+  {
+    name: "Infinite Scroll Animation",
+    youtubeLink:
+      "https://www.youtube.com/watch?v=30Ruc1Pjj6s&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=5",
+  },
 ];

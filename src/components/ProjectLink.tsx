@@ -7,7 +7,7 @@ type Props = {
 };
 
 function ProjectLink({ name, youtubeLink }: Props) {
-  const projectLink = name.toLowerCase().replace(" ", "-");
+  const projectLink = name.toLowerCase().split(" ").join("-");
 
   return (
     <div className="flex items-center gap-2">
