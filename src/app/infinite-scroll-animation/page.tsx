@@ -8,7 +8,7 @@ function InfiniteScrollAnimationPage() {
           const priceIncrease = stock.priceChange > 0;
 
           return (
-            <li className="flex gap-2 items-center">
+            <li key={stock.ticker} className="flex gap-2 items-center">
               <p className="text-gray-300">{stock.ticker}</p>
               <p className="text-gray-300">${stock.price}</p>
               <Triangle
