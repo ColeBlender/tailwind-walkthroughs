@@ -82,6 +82,6 @@ const projects = [
   {
     name: "Investment",
     youtubeLink:
-      "https://www.youtube.com/watch?v=Bj2qvWDeYdw&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=4",
+      "https://www.youtube.com/watch?v=30Ruc1Pjj6s&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=5",
   },
 ];
