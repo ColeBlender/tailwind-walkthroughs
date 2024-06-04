@@ -87,6 +87,6 @@ const projects = [
   {
     name: "Infinite Scroll Animation",
     youtubeLink:
-      "https://www.youtube.com/watch?v=30Ruc1Pjj6s&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=5",
+      "https://www.youtube.com/watch?v=jsB3_yI6p-0&list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6&index=1",
   },
 ];
