@@ -3,7 +3,7 @@ import { YouTubeIcon } from "./ui/cole-social-icons";
 
 type Props = {
   name: string;
-  youtubeLink: string;
+  youtubeLink: string | null;
 };
 
 function ProjectLink({ name, youtubeLink }: Props) {
@@ -15,9 +15,16 @@ function ProjectLink({ name, youtubeLink }: Props) {
         {name}
       </Link>
 
-      <Link href={youtubeLink} target="_blank">
-        <YouTubeIcon className="size-6" />
-      </Link>
+      {youtubeLink ? (
+        <Link href={youtubeLink} target="_blank">
+          <YouTubeIcon className="size-6" />
+        </Link>
+      ) : (
+        <p className="text-[10px] text-center leading-3 text-zinc-400">
+          <p>Coming</p>
+          <p>Soon</p>
+        </p>
+      )}
     </div>
   );
 }
