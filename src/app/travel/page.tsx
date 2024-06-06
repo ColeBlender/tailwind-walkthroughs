@@ -21,11 +21,11 @@ function TravelPage() {
   ];
 
   return (
-    <div className="flex flex-col w-full min-h-screen">
-      <header className="w-full h-24 flex items-center justify-between px-4 md:px-8">
-        <Menu className="sm:hidden size-10" />
-        <nav className="gap-12 hidden sm:flex">
-          <button className="text-emerald-700 leading-5 text-2xl font-semibold text-start">
+    <div className="flex min-h-screen w-full flex-col">
+      <header className="flex h-24 w-full items-center justify-between px-4 md:px-8">
+        <Menu className="size-10 sm:hidden" />
+        <nav className="hidden gap-12 sm:flex">
+          <button className="text-start text-2xl font-semibold leading-5 text-emerald-700">
             <p>trip</p>
             <p>mate</p>
           </button>
@@ -35,14 +35,14 @@ function TravelPage() {
           <button>Contact Us</button>
         </nav>
 
-        <button className="bg-emerald-700 text-white h-10 w-28 rounded-full">
+        <button className="h-10 w-28 rounded-full bg-emerald-700 text-white">
           Sign Up
         </button>
       </header>
 
-      <main className="flex flex-col items-center flex-1 w-full">
+      <main className="flex w-full flex-1 flex-col items-center">
         <div className="flex w-full flex-1">
-          <div className="flex-1 px-4 py-12 flex flex-col">
+          <div className="flex flex-1 flex-col px-4 py-12">
             <h1 className="text-6xl font-semibold">
               Explore the <p>horizon with us</p>
             </h1>
@@ -63,11 +63,11 @@ function TravelPage() {
               </div>
             </div>
 
-            <button className="bg-emerald-700 w-full text-white rounded-full mt-4 h-10 shadow-sm">
+            <button className="mt-4 h-10 w-full rounded-full bg-emerald-700 text-white shadow-sm">
               Explore Now
             </button>
 
-            <div className="flex items-center justify-between mt-auto">
+            <div className="mt-auto flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Star />
                 <p>900K+ reviews on Trust Pilot</p>
@@ -82,7 +82,7 @@ function TravelPage() {
             </div>
           </div>
 
-          <div className="flex-1 hidden lg:block">
+          <div className="hidden flex-1 lg:block">
             <img src="/travel-image-1.jpg" className="size-full object-cover" />
           </div>
         </div>

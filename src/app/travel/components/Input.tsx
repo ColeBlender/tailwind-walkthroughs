@@ -4,9 +4,9 @@ type Props = {
 
 function Input({ type }: Props) {
   return (
-    <div className="rounded-xl p-4 border shadow-md">
-      <p className="text-gray-400 text-sm">{type}</p>
-      <input type="text" className="border-b w-full font-bold mt-2" />
+    <div className="rounded-xl border p-4 shadow-md">
+      <p className="text-sm text-gray-400">{type}</p>
+      <input type="text" className="mt-2 w-full border-b font-bold" />
     </div>
   );
 }

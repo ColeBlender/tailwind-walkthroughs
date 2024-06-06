@@ -4,54 +4,124 @@ import {
   XIcon,
   YouTubeIcon,
 } from "@/components/ui/cole-social-icons";
+import { links } from "@/lib/constants";
 import { projects } from "@/projects";
 import Link from "next/link";
 
 function HomePage() {
+  const totalFinishedProjects = projects.reduce(
+    (total, project) => total + +!!project.youtubeLink,
+    0,
+  );
+  const totalComingSoonVideos = projects.length - totalFinishedProjects;
+
+  const messages = [
+    "Thank You for Watching 🤩",
+    "Subscribe to Me on youTubeProfile",
+    `${totalFinishedProjects} Released Videos and Counting 🚀`,
+    "Follow Me on x",
+    `${totalComingSoonVideos || "More"} Video${totalComingSoonVideos !== 1 ? "s" : ""} Coming Soon 🎥`,
+    "Follow Me on gitHubProfile",
+  ];
+
   return (
-    <main className="min-h-screen flex flex-col items-center px-4 bg-black text-white">
-      <div className="mt-16 w-full max-w-4xl flex flex-col items-center">
-        <h1 className="text-4xl font-bold text-center">
-          Tailwind Walkthroughs
-        </h1>
+    <main className="min-h-screen bg-black pt-16 text-white">
+      <h1 className="text-center text-4xl font-bold">Tailwind Walkthroughs </h1>
 
-        <div className="w-full mt-6">
-          <div className="flex justify-center items-center gap-2">
-            <p className="text-center text-lg">By: Cole Blender</p>
+      <div className="mt-6 flex items-center justify-center gap-2">
+        <p className="text-center text-lg">By: Cole Blender</p>
 
-            <img src="/prof-pic.png" className="rounded-full size-7" />
-          </div>
+        <img src="/prof-pic.png" className="size-7 rounded-full" />
+      </div>
 
-          <div className="flex gap-6 w-full justify-center mt-2">
-            <Link
-              href="https://www.youtube.com/playlist?list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6"
-              target="_blank"
-            >
-              <YouTubeIcon className="size-6" />
-            </Link>
-            <Link href="https://twitter.com/coleblender" target="_blank">
-              <XIcon className="size-6" />
-            </Link>
-            <Link
-              href="https://github.com/ColeBlender/tailwind-walkthroughs"
-              target="_blank"
-            >
-              <GitHubIcon className="size-6" />
-            </Link>
-          </div>
-        </div>
+      <div className="mt-2 flex justify-center gap-6">
+        <Link
+          href={links.youTube}
+          target="_blank"
+          className="transition-transform duration-200 ease-in-out hover:scale-105"
+        >
+          <YouTubeIcon className="size-6" />
+        </Link>
+        <Link
+          href={links.x}
+          target="_blank"
+          className="transition-transform duration-200 ease-in-out hover:scale-105"
+        >
+          <XIcon className="size-6" />
+        </Link>
+        <Link
+          href={links.gitHub}
+          target="_blank"
+          className="transition-transform duration-200 ease-in-out hover:scale-105"
+        >
+          <GitHubIcon className="size-6" />
+        </Link>
+      </div>
 
-        <hr className="border-muted-foreground w-full my-10" />
+      <div className="mt-6 flex overflow-hidden border-y border-zinc-700 bg-zinc-900">
+        <ul className="animate-home-scroll hover:animate-home-scroll-slow flex gap-10 whitespace-nowrap py-4 text-white">
+          {[...messages, ...messages, ...messages, ...messages].map(
+            (message, index) => {
+              const hoverColors = [
+                "hover:text-neon-green",
+                "hover:text-neon-purple",
+                "hover:text-neon-orange",
+                "hover:text-neon-pink",
+              ];
 
-        <div className="flex flex-col gap-2 items-center">
-          {projects.map((project) => (
-            <ProjectLink
-              key={project.name}
-              name={project.name}
-              youtubeLink={project.youtubeLink}
-            />
-          ))}
-        </div>
+              const hoverColor = hoverColors[index % hoverColors.length];
+
+              const isLink =
+                message.includes("Follow Me") || message.includes("Subscribe");
+
+              const className = `gap-2 text-zinc-400 transition-colors duration-200 ease-in-out ${hoverColor}`;
+
+              if (isLink) {
+                const splitMessage = message.split(" ");
+                const link = splitMessage[splitMessage.length - 1] as
+                  | "youTubeProfile"
+                  | "x"
+                  | "gitHubProfile";
+
+                return (
+                  <li key={message} className={className}>
+                    <Link
+                      href={links[link]}
+                      target="_blank"
+                      className="flex items-center gap-2"
+                    >
+                      <p>{splitMessage.slice(0, -1).join(" ")}</p>
+                      {link === "youTubeProfile" ? (
+                        <YouTubeIcon className="size-5" />
+                      ) : link === "x" ? (
+                        <XIcon className="size-5 text-white" />
+                      ) : (
+                        <GitHubIcon className="size-5 text-white" />
+                      )}
+                    </Link>
+                  </li>
+                );
+              } else {
+                return (
+                  <li key={message} className={className}>
+                    <p>{message}</p>
+                  </li>
+                );
+              }
+            },
+          )}
+        </ul>
+      </div>
+
+      <div className="mt-10 flex flex-col items-center gap-2">
+        {projects.map((project, index) => (
+          <ProjectLink
+            key={project.name}
+            name={project.name}
+            youtubeLink={project.youtubeLink}
+            index={index}
+          />
+        ))}
       </div>
     </main>
   );

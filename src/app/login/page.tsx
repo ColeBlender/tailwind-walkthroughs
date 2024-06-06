@@ -13,37 +13,37 @@ function LoginPage() {
   };
 
   return (
-    <main className="flex flex-col min-h-screen justify-center items-center px-4 text-white">
+    <main className="flex min-h-screen flex-col items-center justify-center px-4 text-white">
       <img
         src="/login-img.webp"
         className="absolute -z-10 size-full object-cover"
       />
 
-      <div className="w-full max-w-[400px] bg-white/20 backdrop-blur rounded-3xl border border-white p-8">
-        <h1 className="text-center text-3xl mb-8">Login</h1>
+      <div className="w-full max-w-[400px] rounded-3xl border border-white bg-white/20 p-8 backdrop-blur">
+        <h1 className="mb-8 text-center text-3xl">Login</h1>
 
         <form className="flex flex-col" action={handleLoginAction}>
           <input
             type="text"
-            className="w-full h-10 bg-transparent border-b border-white placeholder:text-white outline-none"
+            className="h-10 w-full border-b border-white bg-transparent outline-none placeholder:text-white"
             placeholder="Username"
           />
           <input
             type="password"
-            className="w-full h-10 bg-transparent border-b border-white placeholder:text-white mt-10 outline-none"
+            className="mt-10 h-10 w-full border-b border-white bg-transparent outline-none placeholder:text-white"
             placeholder="Password"
           />
 
-          <div className="flex items-center justify-center gap-2 mt-16">
+          <div className="mt-16 flex items-center justify-center gap-2">
             <input type="checkbox" />
             <p className="text-sm">I agree to the terms and conditions</p>
           </div>
 
           <button
-            className="bg-orange-500 w-56 h-12 rounded-2xl mx-auto mt-8 font-semibold text-xl mb-6 disabled:bg-orange-500/50"
+            className="mx-auto mb-6 mt-8 h-12 w-56 rounded-2xl bg-orange-500 text-xl font-semibold disabled:bg-orange-500/50"
             disabled={isPending}
           >
-            {isPending ? <Loader2 className="animate-spin mx-auto" /> : "Login"}
+            {isPending ? <Loader2 className="mx-auto animate-spin" /> : "Login"}
           </button>
         </form>
       </div>

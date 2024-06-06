@@ -8,23 +8,23 @@ const font = Noto_Serif({
 
 function ArticlePage() {
   return (
-    <main className={`min-h-screen flex gap-4 p-4 ${font.className}`}>
-      <div className="max-w-4xl mx-auto flex gap-4">
-        <div className="flex-1 relative">
-          <button className="absolute rounded-full py-2 px-4 flex gap-1 border border-zinc-500 hover:bg-zinc-200 transition-colors duration-200 ease-in-out">
+    <main className={`flex min-h-screen gap-4 p-4 ${font.className}`}>
+      <div className="mx-auto flex max-w-4xl gap-4">
+        <div className="relative flex-1">
+          <button className="absolute flex gap-1 rounded-full border border-zinc-500 px-4 py-2 transition-colors duration-200 ease-in-out hover:bg-zinc-200">
             <MoveLeft />
             Back to list
           </button>
 
-          <h1 className="text-5xl font-light mt-24">
+          <h1 className="mt-24 text-5xl font-light">
             The Cultural Significance of Greenhouses
           </h1>
-          <div className="flex items-center gap-2 mt-4">
-            <img src="/prof-pic.png" className="rounded-full size-10" />
+          <div className="mt-4 flex items-center gap-2">
+            <img src="/prof-pic.png" className="size-10 rounded-full" />
             <p>Cole Blender</p>
           </div>
 
-          <div className="flex flex-col gap-6 mt-10 relative">
+          <div className="relative mt-10 flex flex-col gap-6">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
               accusantium! Veniam, facilis reiciendis nulla nemo beatae,
@@ -51,43 +51,43 @@ function ArticlePage() {
               voluptatibus tempora perferendis vel rem culpa delectus!
             </p>
 
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/90 pointer-events-none" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent to-white/90" />
           </div>
         </div>
 
-        <div className="flex-1 relative hidden sm:block">
-          <div className="flex flex-col h-full gap-4 pb-16">
+        <div className="relative hidden flex-1 sm:block">
+          <div className="flex h-full flex-col gap-4 pb-16">
             <div className="h-[60%] shadow-xl">
               <img
-                className="rounded-lg object-cover size-full"
+                className="size-full rounded-lg object-cover"
                 src="/article-img-1.jpeg"
               />
             </div>
             <div className="h-[20%] shadow-xl">
               <img
-                className="rounded-lg object-cover size-full"
+                className="size-full rounded-lg object-cover"
                 src="/article-img-2.jpeg"
               />
             </div>
-            <div className="h-[20%] flex gap-4">
+            <div className="flex h-[20%] gap-4">
               <div className="flex-1 shadow-xl">
                 <img
-                  className="rounded-lg object-cover size-full"
+                  className="size-full rounded-lg object-cover"
                   src="/article-img-3.jpeg"
                 />
               </div>
 
-              <div className="rounded-lg bg-blue-100 size-full flex-1 text-4xl flex items-center justify-center shadow-xl">
+              <div className="flex size-full flex-1 items-center justify-center rounded-lg bg-blue-100 text-4xl shadow-xl">
                 68+
               </div>
             </div>
           </div>
 
-          <div className="flex gap-2 absolute bottom-0 right-0">
-            <button className="border border-zinc-500 py-2 px-4 rounded-full hover:bg-zinc-200 transition-colors duration-200 ease-in-out">
+          <div className="absolute bottom-0 right-0 flex gap-2">
+            <button className="rounded-full border border-zinc-500 px-4 py-2 transition-colors duration-200 ease-in-out hover:bg-zinc-200">
               Likes 14K
             </button>
-            <button className="border border-zinc-500 py-2 px-4 rounded-full hover:bg-zinc-200 transition-colors duration-200 ease-in-out">
+            <button className="rounded-full border border-zinc-500 px-4 py-2 transition-colors duration-200 ease-in-out hover:bg-zinc-200">
               Replies 342
             </button>
           </div>

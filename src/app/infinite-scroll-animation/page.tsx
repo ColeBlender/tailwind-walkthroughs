@@ -2,13 +2,13 @@ import { Triangle } from "lucide-react";
 
 function InfiniteScrollAnimationPage() {
   return (
-    <div className="overflow-hidden bg-black flex">
-      <ul className="flex gap-10 bg-black text-white py-4 animate-infinite-scroll">
+    <div className="flex overflow-hidden bg-black">
+      <ul className="flex animate-infinite-scroll gap-10 bg-black py-4 text-white">
         {[...stocks, ...stocks].map((stock) => {
           const priceIncrease = stock.priceChange > 0;
 
           return (
-            <li key={stock.ticker} className="flex gap-2 items-center">
+            <li key={stock.ticker} className="flex items-center gap-2">
               <p className="text-gray-300">{stock.ticker}</p>
               <p className="text-gray-300">${stock.price}</p>
               <Triangle

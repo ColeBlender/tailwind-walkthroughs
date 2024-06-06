@@ -3,16 +3,16 @@ import Link from "next/link";
 
 function LandingPage() {
   return (
-    <div className="bg-slate-800 flex flex-col min-h-screen text-white">
-      <header className="flex justify-between items-center h-24 px-8">
-        <Menu className="md:hidden size-10" />
+    <div className="flex min-h-screen flex-col bg-slate-800 text-white">
+      <header className="flex h-24 items-center justify-between px-8">
+        <Menu className="size-10 md:hidden" />
         <Link
           href="/landing-page"
-          className="text-xl font-semibold hidden md:block"
+          className="hidden text-xl font-semibold md:block"
         >
           TraVelook
         </Link>
-        <nav className="gap-10 font-light hidden md:flex">
+        <nav className="hidden gap-10 font-light md:flex">
           <Link href="/landing-page">Home</Link>
           <Link href="/landing-page">About</Link>
           <Link href="/landing-page">Destination</Link>
@@ -21,26 +21,26 @@ function LandingPage() {
         </nav>
         <Link
           href="/landing-page"
-          className="bg-orange-700 px-8 py-3 rounded-xl hover:brightness-110 transition-all duration-200 ease-in-out"
+          className="rounded-xl bg-orange-700 px-8 py-3 transition-all duration-200 ease-in-out hover:brightness-110"
         >
           Book Now
         </Link>
       </header>
 
       <div className="px-6 pb-8">
-        <div className="max-h-[62vh] rounded-xl relative">
-          <h1 className="absolute text-3xl left-1/2 -translate-x-1/2 sm:text-5xl text-center top-10 text-slate-700 font-semibold bg-white/50 backdrop-blur py-2 rounded-xl px-2 w-full max-w-[60vw]">
+        <div className="relative max-h-[62vh] rounded-xl">
+          <h1 className="absolute left-1/2 top-10 w-full max-w-[60vw] -translate-x-1/2 rounded-xl bg-white/50 px-2 py-2 text-center text-3xl font-semibold text-slate-700 backdrop-blur sm:text-5xl">
             We're taking action to make the earth a better place
           </h1>
           <img
             src="/landing-page-image-1.jpg"
-            className=" size-full object-cover max-h-[62vh] rounded-xl"
+            className="size-full max-h-[62vh] rounded-xl object-cover"
           />
 
-          <form className="absolute -bottom-48 md:-bottom-6 rounded-xl p-4 bg-white left-1/2 -translate-x-1/2 flex flex-col md:flex-row gap-2">
+          <form className="absolute -bottom-48 left-1/2 flex -translate-x-1/2 flex-col gap-2 rounded-xl bg-white p-4 md:-bottom-6 md:flex-row">
             <div className="text-black">
               <h3 className="flex items-center text-xl">
-                Location <ChevronDown className="size-5 ml-2" />
+                Location <ChevronDown className="ml-2 size-5" />
               </h3>
               <input
                 type="text"
@@ -50,7 +50,7 @@ function LandingPage() {
             </div>
             <div className="text-black">
               <h3 className="flex items-center text-xl">
-                Date <ChevronDown className="size-5 ml-2" />
+                Date <ChevronDown className="ml-2 size-5" />
               </h3>
               <input
                 type="text"
@@ -60,7 +60,7 @@ function LandingPage() {
             </div>
             <div className="text-black">
               <h3 className="flex items-center text-xl">
-                Guests <ChevronDown className="size-5 ml-2" />
+                Guests <ChevronDown className="ml-2 size-5" />
               </h3>
               <input
                 type="text"
@@ -68,25 +68,25 @@ function LandingPage() {
                 placeholder="Number of guests"
               />
             </div>
-            <button className="bg-orange-700 md:w-36 py-3 rounded-xl w-full">
+            <button className="w-full rounded-xl bg-orange-700 py-3 md:w-36">
               Explore Now
             </button>
           </form>
         </div>
 
-        <div className="mt-56 md:mt-20 flex flex-col items-center">
+        <div className="mt-56 flex flex-col items-center md:mt-20">
           <h4 className="text-2xl">Popular Searches</h4>
 
-          <hr className="w-16 mb-5 mt-2" />
+          <hr className="mb-5 mt-2 w-16" />
 
-          <div className="flex gap-4 flex-col md:flex-row">
-            <button className="border rounded-xl px-6 py-3">London</button>
-            <button className="border rounded-xl px-6 py-3 bg-orange-700">
+          <div className="flex flex-col gap-4 md:flex-row">
+            <button className="rounded-xl border px-6 py-3">London</button>
+            <button className="rounded-xl border bg-orange-700 px-6 py-3">
               New York
             </button>
-            <button className="border rounded-xl px-6 py-3">Paris</button>
-            <button className="border rounded-xl px-6 py-3">San Diego</button>
-            <button className="border rounded-xl px-6 py-3">Las Vegas</button>
+            <button className="rounded-xl border px-6 py-3">Paris</button>
+            <button className="rounded-xl border px-6 py-3">San Diego</button>
+            <button className="rounded-xl border px-6 py-3">Las Vegas</button>
           </div>
         </div>
       </div>

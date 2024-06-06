@@ -5,3 +5,9 @@ The ultimate way to master Tailwind CSS is by building real, functional UIs. Sur
 Let's do it 👇
 
 https://www.youtube.com/playlist?list=PLUyHhQn1KLAXK4qY0YIjGQPA5DI2zPWd6
+
+Note: to enable auto sort of tailwind classes add .prettierrc file from this repo and run this command
+
+```bash
+pnpm add -D prettier prettier-plugin-tailwindcss
+```

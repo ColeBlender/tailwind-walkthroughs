@@ -10,20 +10,20 @@ import Link from "next/link";
 
 function InvestmentPage() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <header className="flex justify-between h-20 items-center border-b border-black px-4">
+    <div className="flex min-h-screen flex-col">
+      <header className="flex h-20 items-center justify-between border-b border-black px-4">
         <h1 className="text-2xl">PropMind</h1>
 
-        <div className="flex gap-4 items-center">
+        <div className="flex items-center gap-4">
           <Link
             href="/investment"
-            className="py-2 px-6 border border-black rounded-full hidden sm:block"
+            className="hidden rounded-full border border-black px-6 py-2 sm:block"
           >
             Login
           </Link>
           <Link
             href="/investment"
-            className="py-2 px-6 bg-black text-white border border-black rounded-full hidden sm:block"
+            className="hidden rounded-full border border-black bg-black px-6 py-2 text-white sm:block"
           >
             Get Started
           </Link>
@@ -31,77 +31,77 @@ function InvestmentPage() {
         </div>
       </header>
 
-      <main className="sm:grid flex-1 grid-cols-4 grid-rows-3">
-        <div className="bg-gradient-to-b from-white to-blue-500 row-span-3 col-span-2 pt-20 px-4 xl:px-16 sm:border-r border-black">
+      <main className="flex-1 grid-cols-4 grid-rows-3 sm:grid">
+        <div className="col-span-2 row-span-3 border-black bg-gradient-to-b from-white to-blue-500 px-4 pt-20 sm:border-r xl:px-16">
           <p className="text-xl">
             Bringing Security To <p>Your Life</p>
           </p>
-          <h1 className="text-2xl lg:text-6xl font-bold uppercase lg:leading-[80px] mt-4">
+          <h1 className="mt-4 text-2xl font-bold uppercase lg:text-6xl lg:leading-[80px]">
             Money <h1>Investment</h1>
           </h1>
 
-          <div className="mt-20 border-y border-black py-4 px-1">
+          <div className="mt-20 border-y border-black px-1 py-4">
             <div className="flex">
               <p className="flex-1">Wealth Investment</p>
               <p className="flex-1">
                 <span className="mr-2">/</span> Up to 10M+ USD
               </p>
-              <MoveUpRight className="bg-black rounded-full text-white w-10 py-1 h-7" />
+              <MoveUpRight className="h-7 w-10 rounded-full bg-black py-1 text-white" />
             </div>
 
-            <hr className="border-black my-4" />
+            <hr className="my-4 border-black" />
 
             <div className="flex">
               <p className="flex-1">Portfolio Manage</p>
               <p className="flex-1">
                 <span className="mr-2">/</span> 5 Accounts
               </p>
-              <MoveUpRight className="bg-black rounded-full text-white w-10 py-1 h-7" />
+              <MoveUpRight className="h-7 w-10 rounded-full bg-black py-1 text-white" />
             </div>
           </div>
         </div>
 
-        <div className="bg-gradient-to-b from-white to-purple-500 row-span-2 px-4 xl:px-16 flex flex-col p-6 sm:border-r border-black">
+        <div className="row-span-2 flex flex-col border-black bg-gradient-to-b from-white to-purple-500 p-6 px-4 sm:border-r xl:px-16">
           <Zap className="size-10" fill={"black"} />
-          <h1 className="text-3xl font-semibold mt-4">Long-Term</h1>
+          <h1 className="mt-4 text-3xl font-semibold">Long-Term</h1>
 
           <p className="mt-5">
             A Low-Cost Low-Touch Large-Cap Portfolio Meant For The Long-Term
             Investment
           </p>
 
-          <hr className="border-black mt-auto mb-2" />
+          <hr className="mb-2 mt-auto border-black" />
 
           <p className="text-sm">10 Yrs CAGR on Invest</p>
 
-          <div className="flex justify-between items-center mt-2">
+          <div className="mt-2 flex items-center justify-between">
             <p className="text-2xl font-bold">6.2%</p>
 
-            <MoveUpRight className="bg-black rounded-full text-white w-10 py-1 h-7" />
+            <MoveUpRight className="h-7 w-10 rounded-full bg-black py-1 text-white" />
           </div>
         </div>
 
-        <div className="bg-gradient-to-b from-white to-green-500 row-span-2 px-4 xl:px-16 flex flex-col p-6">
+        <div className="row-span-2 flex flex-col bg-gradient-to-b from-white to-green-500 p-6 px-4 xl:px-16">
           <Crosshair className="size-10" />
-          <h1 className="text-3xl font-semibold mt-4">Short-Term</h1>
+          <h1 className="mt-4 text-3xl font-semibold">Short-Term</h1>
 
           <p className="mt-5">
             Algorithmically Picked Portfolio Of Best Stocks Based On
             Price-Momentum
           </p>
 
-          <hr className="border-black mt-auto mb-2" />
+          <hr className="mb-2 mt-auto border-black" />
 
           <p className="text-sm">25 Yrs Return on Invest</p>
 
-          <div className="flex justify-between items-center mt-2">
+          <div className="mt-2 flex items-center justify-between">
             <p className="text-2xl font-bold">24.2%</p>
 
-            <MoveUpRight className="bg-black rounded-full text-white w-10 py-1 h-7" />
+            <MoveUpRight className="h-7 w-10 rounded-full bg-black py-1 text-white" />
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-yellow-200 to-white col-span-2 px-4 xl:px-16 flex flex-col p-6 sm:border-t border-black">
+        <div className="col-span-2 flex flex-col border-black bg-gradient-to-r from-yellow-200 to-white p-6 px-4 sm:border-t xl:px-16">
           <TrendingUp className="size-10" />
           <h1 className="text-3xl font-semibold">Wealth PMS</h1>
 
@@ -109,20 +109,20 @@ function InvestmentPage() {
             Up to 25 stocks selected based on Sharpe rations and liquidity
           </p>
 
-          <hr className="border-black mt-auto mb-2" />
+          <hr className="mb-2 mt-auto border-black" />
 
           <p className="text-sm">30 Yrs CAGR on invest</p>
 
-          <div className="flex justify-between items-center mt-2">
+          <div className="mt-2 flex items-center justify-between">
             <p className="text-2xl font-bold">28.2%</p>
 
-            <MoveUpRight className="bg-black rounded-full text-white w-10 py-1 h-7" />
+            <MoveUpRight className="h-7 w-10 rounded-full bg-black py-1 text-white" />
           </div>
         </div>
       </main>
 
-      <div className="h-16 bg-black flex items-center overflow-hidden">
-        <ul className="flex gap-10 text-white items-center animate-tickers">
+      <div className="flex h-16 items-center overflow-hidden bg-black">
+        <ul className="flex animate-tickers items-center gap-10 text-white">
           {[...stocks, ...stocks].map((stock) => {
             const increase = stock.priceChange > 0;
             return (
@@ -154,7 +154,7 @@ function InvestmentPage() {
         </ul>
       </div>
 
-      <footer className="h-20 flex justify-between px-4 items-center">
+      <footer className="flex h-20 items-center justify-between px-4">
         <div className="flex items-center gap-4">
           <p>Terms Policy</p>
           <p>•</p>

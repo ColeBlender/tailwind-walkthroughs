@@ -6,7 +6,7 @@ type Props = {
 function Tag({ tag, index }: Props) {
   return (
     <div
-      className={`border-gray-400 border rounded-full px-4 h-10 flex items-center ${
+      className={`flex h-10 items-center rounded-full border border-gray-400 px-4 ${
         index === 0 && "bg-yellow-500"
       }`}
     >
